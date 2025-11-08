@@ -22,8 +22,8 @@ let add_salary=emp2.salary*1.10;
  console.log(`Name:${emp2.name}-department:${emp2.department}-New Salary:${add_salary}`);
 })
 // لحساب اعلى اداء للموظف فى الشركه 
-  let max_Performance=Math.max(...Active_Employees.map((emp3)=>emp3.performance));
+  let max_Performance=Math.max(...employees.map((emp3)=>emp3.performance));
   // لايجاد موظف اعلى اداء find تم استخدام 
-  let find_Performance =Active_Employees.find((emp4)=> emp4.performance===max_Performance);
+  let find_Performance =employees.find((emp4)=> emp4.performance===max_Performance);
   console.log("الموظف الأعلى أداءً في الشركة",find_Performance);
   
